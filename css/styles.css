@@ -1,0 +1,21 @@
+#grad {
+  background: linear-gradient(gray, navy blue);
+}
+
+
+.btn {
+  display: block;
+}
+
+#vaca {
+  display: none;
+}
+
+#help-inline {
+  display: none;
+}
+
+.span12 {
+  margin: 0 auto;
+  float: none;
+}

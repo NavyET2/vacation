@@ -16,17 +16,24 @@
       <form id="vacationWizard">
         <label for="budget">Preferred budget</label>
         <input id="budget" type="text">
+        <label for="socialSetting">Preferred social setting</label>
+        <select id="socialSetting">
+          <option value="party">party</option>
+          <option value="sightSeeing">sightSeeing</option>
+          <option value="family">family</option>
+        </select>
         <label for="climate">Preferred climate</label>
         <select id="climate">
           <option value="cold">cold</option>
           <option value="hot">hot</option>
         </select>
 
-        <button type="submit" class="btn">Show me my celebrity match!</button>
+
+        <button type="submit" class="btn">Show me my vacation spot!</button>
       </form>
 
       <div id="vaca">
-        <p>Your perfect vacation spot is <span id="yourVaca"></span>! Let us know if you need mroe assistance booking your trip!</p>
+        <p>Your perfect vacation spot is <span id="yourVaca"></span>! Let us know if you need more assistance booking your trip!</p>
         <div id="photo">
 
         </div>

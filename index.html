@@ -8,33 +8,49 @@
     <title>Vacation Wizard!</title>
   </head>
   <body>
-    <div class="span12">
-      <h1>Vacation Wizard</h1>
-      <form id="vacationWizard">
-        <p>Let us know what your vacation specifications are and we'll do the hard work for you! </p>
-        <div class="form-group row">
-          <label for="budget">Preferred budget</label>
-          <input id="budget" type="text" required="">
-          <!-- required added so that the user cannot submit the form without entering a value. GUI on form flashes red by default -->
-        </div>
-        <div class="form-group row">
-          <label for="social">Preferred social setting</label>
-          <select id="social" required="">
-            <option value="party">party</option>
-            <option value="family">family</option>
-          </select>
-        </div>
-        <div class="form-group row">
-          <label for="climate">Preferred climate</label>
-          <select id="climate" required="">
-            <option value="cold">cold</option>
-            <option value="hot">hot</option>
-          </select>
-        </div>
-        <button type="submit" class="btn">Show me my vacation spot!</button>
-      </form>
-      <div id="vaca">
-        <p>Let us know if you need more assistance booking your trip!</p>
+    <div class=container>
+      <div class="span6">
+        <h1>Vacation Wizard</h1>
+        <form id="vacationWizard">
+          <p>Let us know what your vacation specifications are and we'll do the hard work for you! </p>
+          <!-- paragraph changed into form to disappear with this.remove jQuery. -->
+          <div class="form-group row">
+            <label for="name">Preferred salutation</label>
+            <input id="name" type="text" required="">
+              <!-- required added so that the user cannot submit the form without entering a value. GUI on form flashes red with error message by default -->
+          </div>
+          <div class="form-group row">
+            <label for="budget">Preferred budget</label>
+            <input id="budget" type="text" required="">
+          </div>
+          <div class="form-group row">
+            <label for="social">Preferred social setting</label>
+            <select id="social" required="">
+              <option value="family">family</option>
+              <option value="party">party</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="activities"> Preferred activities</label>
+            <select id="activities" required="">
+              <option value="running">running</option>
+              <option value="biking">biking</option>
+              <option value="climbing">climbing</option>
+              <option value="lounging">lounging</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="climate">Preferred climate</label>
+            <select id="climate" required="">
+              <option value="hot">hot</option>
+              <option value="cold">cold</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Show me my vacation spot!</button>
+        </form>
+      </div>
+      <div class "span8" id="vaca">
+        <p><strong>Let us know if you need more assistance booking your trip!</strong></p>
         <div id="photo"></div>
       </div>
     </div>

@@ -1,7 +1,13 @@
-#grad {
-  background: linear-gradient(gray, navy blue);
+.container{
+  justify-items: center;
 }
 
+body {
+  background: url(http://i.imgur.com/i2Ws2Tf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .btn {
   display: block;
@@ -15,7 +21,29 @@
   display: none;
 }
 
-.span12 {
-  margin: 0 auto;
+
+.span6 {
   float: none;
+  background-color: tan;
+  margin: 4em;
+  padding-left:50px;
+  display: inline-block;
+  margin-top: 50px;
+  border: 5px solid gray;
+}
+
+.span8 {
+  float: none;
+  background-color: tan;
+  margin: 4em;
+  padding-left:50px;
+  display: inline-block;
+  margin-top: 50px;
+  border: 5px solid red;
+}
+
+label {
+float: left;
+width: 10em;
+margin-right: 2em;
 }
